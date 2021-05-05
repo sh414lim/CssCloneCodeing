@@ -64,13 +64,40 @@ header{
 }
 
 main{
-    height: 5000vh;
-    background-color: $red;
    
-}
-.part_one{
-        background-color:$darkred;
-}
-.part_two{
-    background-color: $red;
-}
+    margin-left: $fixedWidth;
+   .movie{
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5) 10%,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0)
+        ),
+        $red;
+       height: 100vh;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       color: white;
+     
+           .movie_header{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            h4{
+                font-size: 20px;
+            }
+            h5{
+                font-size: 15px;
+                margin-left: 15px;
+            }
+       }
+
+   }
+   img{
+    width: 130%;
+   }
+
+   }
