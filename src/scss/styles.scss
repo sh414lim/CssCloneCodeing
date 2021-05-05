@@ -68,9 +68,11 @@ main{
     margin-left: $fixedWidth;
    .movie{
     background: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5) 10%,
-        rgba(0,0,0,0.5),
+        to bottom,
+        rgba(0,0,0,0.5) 2%,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0),
+        rgba(0,0,0,0),
         rgba(0,0,0,0)
         ),
         $red;
@@ -97,7 +99,13 @@ main{
 
    }
    img{
+       display: block;
     width: 130%;
+    box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    &:hover{
+        opacity: 1;
+    }
    }
 
    }
