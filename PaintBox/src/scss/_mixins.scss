@@ -1,0 +1,11 @@
+@mixin link($world) {
+    text-decoration: none;
+    display: block;
+    color:$color ;
+    @if $word =="odd"{
+        color: blue;
+    }else{
+        color: red;
+    }
+    
+}
